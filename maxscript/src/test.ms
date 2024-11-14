@@ -1,28 +1,3 @@
-/*
-poi=point3 1 2 3
-p2a poi
-
-
-rig on surface of sphere
-	Can we constraint camera to vertex?
-rig on volume is basically changing scale of original surface
-
-
-rig inside a box volume
-pointing cameras outside center of box
-
-.........................
-IDEA:
-
-	pick geometry
-	convert to mesh
-	(if volume is selected) raytrace within aabb, fill with boxes
-	if change of object geometry is detected => re calc positions of cameras
-	use the vertices to use scatter to place the cameras onto vertices
-	
-	=>make the cameras a group and rescaling will not scale them, only the geometry, they will follow.
-	
-possible to constrain cameras to vertices?
 
 */
 fn p2a p =
