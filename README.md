@@ -19,10 +19,22 @@ Going from a number of 2D images to a 3D representation (i.e. a point cloud) req
 
 # Variants
 3DGS
+Original gaussian splatting.
 
 2DGS
+Flattens the GS onto surfaces => can get normal and depth maps that are not fuzzy.
 
 G^3
+Relighting GS using a lighting rig.
 
 Textured GS
+Adds view dependent opacity to the GS, interesting when dealing with reflections?
+
+
+N dimensional GS, for mother of pearl, mahogany, iridescent materials.
+
+# Thoughts
+Deadling with "sweeping under the rug" reflections by turning off splats if the view angle goes beyond certain points in space?
+So, basically control splats based on XYZ position (well, maybe encoded as SH and a distance function that turns the splat on or off based on distance and angle). In this way the splats that are reflections in a mirror will be invisible if you look in the mirror from the other side.
+
 
