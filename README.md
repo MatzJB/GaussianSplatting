@@ -30,6 +30,8 @@ Relighting GS using a lighting rig.
 Textured GS
 Adds view dependent opacity to the GS, interesting when dealing with reflections?
 
+Disentagling GS and texture for editing
+https://slothfulxtx.github.io/TexGS/
 
 N dimensional GS, for mother of pearl, mahogany, iridescent materials.
 
